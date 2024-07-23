@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat, Frauncesu } from 'next/font/google';
+import { Montserrat, Fraunces } from 'next/font/google';
 import './globals.css';
 
 const montSerrat = Montserrat({
@@ -9,11 +9,11 @@ const montSerrat = Montserrat({
   variable: '--font-montSerrat',
 });
 
-const frauncesu = Frauncesu({
+const fraunces = Fraunces({
   subsets: ['latin'],
   display: 'swap',
   style: 'normal',
-  variable: '--font-frauncesu',
+  variable: '--font-fraunces',
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montSerrat.variable} ${frauncesu.variable}`}>
+      <body className={`${montSerrat.variable} ${fraunces.variable}`}>
         {children}
       </body>
     </html>
