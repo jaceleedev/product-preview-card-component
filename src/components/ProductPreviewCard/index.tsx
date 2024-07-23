@@ -2,25 +2,32 @@ import Image from 'next/image';
 
 function ProductPreviewCard() {
   return (
-    <article className="grid grid-cols-2 w-[600px] h-[450px] rounded-[10px] bg-white overflow-hidden">
-      <div className="relative">
+    <article className="grid grid-cols-2 w-[600px] min-h-[450px] rounded-[10px] bg-white overflow-hidden mobile:grid-cols-1 mobile:w-[343px] mobile:min-h-[611px]">
+      <div className="relative mobile:h-[240px]">
         <Image
           src={'/images/image-product-desktop.jpg'}
           alt="Gabrielle Essence Eau De Parfum bottle on a table with green leaves"
           fill
           priority
-          className="object-cover"
+          className="object-cover mobile:hidden"
+        />
+        <Image
+          src={'/images/image-product-mobile.jpg'}
+          alt="Gabrielle Essence Eau De Parfum bottle on a table with green leaves"
+          fill
+          priority
+          className="object-cover hidden mobile:block"
         />
       </div>
-      <div className="flex flex-col justify-between p-8">
-        <div>
+      <div className="flex flex-col p-8 mobile:p-6">
+        <div className="mb-[29px] mobile:mb-6">
           <p
-            className="text-overline text-aurometal-saurus mb-5"
+            className="text-overline text-aurometal-saurus mb-5 mobile:mb-3"
             aria-label="Product category"
           >
             PERFUME
           </p>
-          <h1 className="text-display text-gunMetal mb-6">
+          <h1 className="text-display text-gunMetal mb-6 mobile:mb-4">
             Gabrielle Essence Eau De Parfum
           </h1>
           <p className="text-body text-aurometal-saurus">
@@ -30,7 +37,7 @@ function ProductPreviewCard() {
         </div>
         <div>
           <div
-            className="flex items-center gap-[19px] mb-[30px]"
+            className="flex items-center gap-[19px] mb-[30px] mobile:mb-5"
             aria-label="Product price"
           >
             <p
