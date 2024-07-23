@@ -28,7 +28,7 @@ const config: Config = {
   plugins: [
     plugin(function ({ addComponents }) {
       const typographyComponents = {
-        '.overline': {
+        '.text-overline': {
           fontFamily: 'var(--font-montSerrat)',
           fontSize: '12px',
           fontStyle: 'normal',
@@ -37,7 +37,7 @@ const config: Config = {
           lineHeight: 'normal',
           letterSpacing: '5px',
         },
-        '.display': {
+        '.text-display': {
           fontFamily: 'var(--font-fraunces)',
           fontSize: '32px',
           fontStyle: 'normal',
@@ -45,7 +45,7 @@ const config: Config = {
           fontFeatureSettings: `'clig' off, 'liga' off`,
           lineHeight: '32px',
         },
-        '.body': {
+        '.text-body': {
           fontFamily: 'var(--font-montSerrat)',
           fontSize: '14px',
           fontStyle: 'normal',
@@ -53,7 +53,7 @@ const config: Config = {
           fontFeatureSettings: `'clig' off, 'liga' off`,
           lineHeight: '23px',
         },
-        '.button-text': {
+        '.text-button': {
           fontFamily: 'var(--font-montSerrat)',
           fontSize: '14px',
           fontStyle: 'normal',
