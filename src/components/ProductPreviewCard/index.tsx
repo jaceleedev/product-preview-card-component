@@ -65,7 +65,7 @@ function ProductPreviewCard() {
                 height={16}
                 aria-hidden="true"
               />
-              <span className="text-button">Add to Cart</span>
+              <span className="text-button text-white">Add to Cart</span>
             </span>
           </button>
         </div>
